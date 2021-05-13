@@ -1,0 +1,14 @@
+<%- include("partials/top") -%>
+  <div id="record">
+    <h3>Запись на мероприятие</h3>
+    <form class="form" action="/" method="post">
+      <label for="name">Имя: <input type="text" name="name" id="name" pattern="^[А-Яа-яЁё\s]+$" required></label>
+
+      <label for="phone">Номер телефона для записи: <input type="tel" name="phone" id="phone"
+          placeholder="+7 (999) 999-99-99" required></label>
+
+      <label for="email">Почта: <input type="email" name="email" id="email" required></label>
+      <button class="form-button form-button-space button" type="submit">Отправить</button>
+    </form>
+  </div>
+  <%- include("partials/bot") -%>
