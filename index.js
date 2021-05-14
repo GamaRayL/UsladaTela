@@ -56,13 +56,7 @@ app.get("/success", function (req, res) {
 
 
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-
-app.listen(port);
-
-app.listen(port, function () {
-  console.log("Сервер успешно запущен.");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Our app is running on port ${PORT}`);
 });
