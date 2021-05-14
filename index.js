@@ -4,6 +4,7 @@ const $ = require("jquery")(window);
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const express = require("express");
+require("dotenv").config();
 
 const app = express();
 
@@ -21,8 +22,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: "juliana.priroda@gmail.com",
-    pass: "44L-fdw-7vX-rEZ"
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD
   }
 });
 
@@ -54,6 +55,14 @@ app.get("/success", function (req, res) {
 });
 
 
-app.listen(3000, function () {
-  console.log("Server is up and running");
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port);
+
+app.listen(port, function () {
+  console.log("Сервер успешно запущен.");
 });
