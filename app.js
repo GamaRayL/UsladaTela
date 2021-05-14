@@ -1,6 +1,3 @@
-const { JSDOM } = require("jsdom");
-const { window } = new JSDOM("");
-const $ = require("jquery")(window);
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const express = require("express");
