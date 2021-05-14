@@ -230,8 +230,10 @@ h2 {
 
 .form-button {
   display: flex;
+  justify-content: center;
   width: 24%;
 }
+
 
 .form-button-space {
   margin-top: 15px;
@@ -452,6 +454,7 @@ h2 {
   }
 
   .detox-main-svg {
+    width: 25%;
     justify-content: space-evenly;
     flex-direction: row;
     order: 0;
