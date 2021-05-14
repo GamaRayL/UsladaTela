@@ -437,8 +437,7 @@ h2 {
   }
 
   .currently-programme-top-main-human {
-    margin-top: 60px;
-    width: 50%;
+    margin-top: 40px;
   }
 }
 
@@ -457,6 +456,10 @@ h2 {
     justify-content: space-evenly;
     flex-direction: row;
     order: 0;
+  }
+
+  .leaves-graph {
+    display: none;
   }
 
   .detox-main-description {
