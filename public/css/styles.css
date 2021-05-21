@@ -133,7 +133,7 @@ h2 {
 
 .detox-bottom-description {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 40px;
 }
 
@@ -189,9 +189,9 @@ h2 {
 
 .cube-graph,
 .leaves-graph,
-.coals-graph,
 .body-graph {
   transition: 0.7s ease-in-out;
+  width: 100%;
 }
 
 .content {
@@ -309,7 +309,7 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
   /* .detox */
   /* .navigation */
 
@@ -323,6 +323,10 @@ h2 {
 
   .best-wishes {
     margin-top: 20px;
+  }
+
+  .leaves-graph {
+    width: 90%;
   }
 
   .detox-main-svg,
@@ -458,10 +462,6 @@ h2 {
     order: 0;
   }
 
-  .leaves-graph {
-    display: none;
-  }
-
   .detox-main-description {
     width: 100%;
     order: 1;
@@ -487,3 +487,4 @@ font-family: 'Reggae One', cursive;
 font-family: 'Ruslan Display', cursive;
 font-family: 'Alice', serif;
 */
+

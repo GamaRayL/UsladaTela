@@ -8,12 +8,10 @@ $(function () {
   // Добавление свойств по наведение на одни элементы, что задействуют другие.
 
   $(".detox-main").on("mouseover", function () {
-    $(".coals-graph").css("filter", "drop-shadow(1px 1px 15px rgba(245, 134, 52, 1))");
-    $(".leaves-graph").css("filter", "drop-shadow(1px 1px 1px rgba(129, 178, 20, 1))");
+    $(".leaves-graph").css("filter", "drop-shadow(0px 0px 10px rgba(129, 178, 20, 1))");
   });
 
   $(".detox-main").on("mouseout", function () {
-    $(".coals-graph").css("filter", "none");
     $(".leaves-graph").css("filter", "none");
   });
 
