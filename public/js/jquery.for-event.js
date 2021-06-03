@@ -10,8 +10,8 @@ $(function () {
   });
 
   $(".content").on("click", function () {
-    $(".navigation-menu__burger").toggleClass("open-menu");
-    $(".navigation-list").toggleClass("open-menu");
+    $(".navigation-menu__burger").removeClass("open-menu");
+    $(".navigation-list").removeClass("open-menu");
   });
 
   // Редактирует введённый код под заданный формат. Jquery плагин.
